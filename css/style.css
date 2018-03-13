@@ -1,0 +1,1262 @@
+/***** General Styling *****/
+* {
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: #61892f;
+}
+
+body {
+    margin: 0px;
+    background-color: #6b6e70;
+    font-family: "Poppins", sans-serif;
+}
+
+header,nav,footer {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/***** MainNav Styling *****/
+nav {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #222629;
+}
+
+nav .responsiveNav {
+    display: none;
+}
+
+nav .navContent {
+    display: block;
+    padding: 30px 100px;
+}
+
+nav .navContent img.smallLogo {
+    display: none;
+}
+
+nav .navContent .linkList {
+    display: inline-block;
+    float: right;
+    padding-top: 10px;
+}
+
+nav ul {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul.topnav li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul.topnav li.dropdownIcon {
+    display: none;
+}
+
+nav ul.topnav li a {
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    transition: 0.2s ease;
+}
+
+nav ul.topnav li a:hover {
+    color: #86c232;
+}
+
+nav ul.topnav li a:active {
+    color: #61892f;
+}
+
+/***** ***** Main Page ***** *****/
+/***** Slideshow Container Styling *****/
+.slideshowContainer {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.hiddenSlide {
+    display: none;
+    position: relative;
+}
+
+.slides:not(:nth-child(1)) {
+    display: none;
+}
+
+.slideshowContainer img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.slidePrev, .slideNext {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.slideNext {
+    right: 0px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.slidePrev:hover, .slideNext:hover {
+    background-color: #222629;
+    opacity: 0.8;
+}
+
+.slideHeader {
+    color: #ffffff;
+    padding-left: 100px;
+    position: absolute;
+    bottom: 60%;
+}
+
+.slideText {
+    color: #ffffff;
+    font-size: 20px;
+    padding-left: 100px;
+    position: absolute;
+    bottom: 40%;
+}
+
+.slideButton {
+    padding-left: 100px;
+    position: absolute;
+    bottom: 30%;
+}
+
+.slideButton a {
+    background-color: #86c232;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: #222629;
+    transition: 0.3s ease;
+}
+
+.slideButton a:hover {
+    background-color: #61892f;
+}
+
+.slideButton a:active {
+    background-color: #507227;
+    color: #ffffff;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+/***** Features Container Styling *****/
+.row.features .col-6.features {
+    display: flex;
+    width: 50%;
+}
+
+.col-6.features .col-6 {
+    text-align: center;
+    border-right: 1px solid #4b4d4e;
+    border-bottom: 1px solid #4b4d4e;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+
+.col-6.features .col-6:hover {
+    background-color: #7d8082;
+}
+
+.col-6.features .col-6 span {
+    font-size: 50px;
+    margin: 5px;
+}
+
+.col-6.features .col-6 h4 {
+    margin: 5px;
+}
+
+.col-6.features .col-6 p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+/***** About Container Styling *****/
+.row.about {
+    border-bottom: 1px solid #4b4d4e;
+    box-shadow: 0px 3px 4px rgba(0,0,0,0.3);
+}
+
+.col-6.aboutLeft {
+    padding: 70px 50px 70px 100px;
+}
+
+.col-6.aboutLeft h1, .col-6.aboutRight h1 {
+    margin: 0px;
+}
+
+.aboutButton a {
+    display: table-cell;
+    padding: 10px 25px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: #000000;
+    transition: 0.3s ease;
+}
+
+.aboutButton a:hover {
+    background-color: #86c232;
+}
+
+.aboutButton a:active {
+    background-color: #61892f;
+    color: #ffffff;
+}
+
+.col-6.aboutRight {
+    padding-top: 70px;
+}
+
+.col-6.aboutRight img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+/***** Projects Container Styling *****/
+.row.projects {
+    box-shadow: 0px 4px 5px rgba(0,0,0,0.3);
+}
+
+.row .col-12.other {
+    text-align-last: center;
+    padding: 20px 0px;
+}
+
+.col-20 {
+    position: relative;
+}
+
+.col-20 img {
+    display: block;
+    margin: auto;
+    width: 99%;
+}
+
+.projectsOverlay {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    width: 99%;
+    margin: auto;
+    background-color: #222629;
+    opacity: 0.35;
+    transition: 0.4s ease;
+}
+
+.col-20:hover .projectsOverlay {
+    opacity: 0;
+}
+
+.overlayText {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 99%;
+    margin: auto;
+    padding: 20px;
+    opacity: 0;
+    background-color: rgba(34, 38, 41, 0.8);
+    transition: 0.4s ease;
+    color: #86c232;
+    font-weight: bold;
+}
+
+.col-20:hover .overlayText {
+    opacity: 1;
+}
+
+/***** Team Container Styling *****/
+.row .col-6.team {
+    display: flex;
+    width: 50%;
+}
+
+.row .col-6.team .col-6 {
+    padding: 20px;
+    margin: auto;
+}
+
+.card {
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: #7d8082;
+}
+
+.card img {
+    width: 100%;
+}
+
+.teamRank {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.cardButton a {
+    display: block;
+    margin-top: 25px;
+    padding: 6px 0px;
+    color: #ffffff;
+    background-color: #222629;
+    transition: 0.3s ease;
+}
+
+.cardButton a:hover {
+    background-color: #86c232;
+    color: #000000;
+}
+
+.cardButton a:active {
+    background-color: #507227;
+    color: #ffffff;
+}
+
+/***** ***** About Page ***** *****/
+/***** Title Image Styling *****/
+.row .col-12 .titleImg {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.row .col-12 .titleImg img {
+    width: 100%;
+    display: block;
+}
+
+.row .col-12 .titleImg .slideHeader {
+    position: absolute;
+    bottom: 45%;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+/***** Breadcrumbs Styling *****/
+ul.breadcrumbs {
+    list-style: none;
+    padding: 5px 10px;
+    background-color: rgba(134,194,50,0.7);
+    display: inline-block;
+    margin: 0px;
+    position: absolute;
+    bottom: 0px;
+    margin-left: 100px;
+}
+
+ul.breadcrumbs li {
+    display: inline;
+    font-size: 16px;
+}
+
+ul.breadcrumbs li+li::before {
+    padding: 5px;
+    color: #000000;
+    content: "/\00a0";
+}
+
+ul.breadcrumbs li a {
+    color: #000000;
+}
+
+ul.breadcrumbs li a:hover {
+    text-decoration: underline;
+}
+
+ul.breadcrumbs li a:active {
+    color: #6b6e70;
+}
+
+/***** About Article Styling *****/
+.row.about.about {
+    box-shadow: none;
+    border-bottom: none;
+}
+
+.row.about ol {
+    padding: 0px 18px;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+.videoContainer {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.videoContainer iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.col-9.video {
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/***** Parallax Container Styling *****/
+.parallax {
+    background-image: url(../img/parallax.jpg);
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax .row .col-6.parallax {
+    display: flex;
+    text-align: center;
+    color: #ffffff;
+}
+
+.parallax .row .col-6.parallax .col-6 {
+    margin: auto;
+}
+
+.parallax .row .col-6.parallax .col-6 h1 {
+    font-size: 60px;
+    margin: 20px;
+    color: #86c232;
+}
+
+.parallax .row .col-6.parallax .col-6 p {
+    font-size: 20px;
+}
+
+/***** Values Container Styling *****/
+.value {
+    display: flex;
+    margin-top: 20px;
+}
+
+.value .valueLeft span {
+    font-size: 60px;
+}
+
+.value .valueLeft img {
+    margin-left: 40px;
+}
+
+.value .valueBody {
+    padding-left: 20px;
+}
+
+.value .valueBody h2 {
+    margin: 0px;
+}
+
+.col-6.aboutRight.values {
+    padding: 70px 50px 70px 100px;
+}
+
+.col-6.aboutRight.values blockquote {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
+/***** ***** Services Page ***** *****/
+/***** Services Table Styling *****/
+.slideHeader.services {
+    color: #222629;
+}
+
+.row.about.about.shadow {
+    box-shadow: 0px 4px 5px rgba(0,0,0,0.3);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tbody tr:nth-child(2n) {
+    background-color: #585a5c;
+}
+
+th {
+    background-color: #222629;
+    color: #ffffff;
+}
+
+th, td {
+    border: 2px solid #000000;
+    line-height: 1.5;
+    padding: 10px;
+    text-align: left;
+}
+
+/***** Hoverable Features Styling *****/
+.row.hoverFeatures {
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.featureBox {
+    display: block;
+    position: relative;
+    width: 350px;
+    height: 200px;
+    background-color: grey;
+    border-radius: 3px;
+    border: 1px solid #000000;
+    text-align: center;
+    margin: auto;
+}
+
+.featureBox span {
+    font-size: 45px;
+    margin-top: 50px;
+}
+
+.featureBox h4 {
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.featureBox .hiddenBox {
+    position: absolute;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.3s ease;
+    text-align: center;
+    width: 105%;
+    height: 105%;
+    top: -2.5%;
+    left: -2.5%;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px #000000;
+    background-color: aliceblue;
+}
+
+.featureBox:hover .hiddenBox {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.hiddenBox span {
+    margin-top: 20px;
+}
+
+.hiddenBox p {
+    font-size: 15px;
+    margin: 10px;
+}
+
+/***** Footer Styling *****/
+footer {
+    width: 100%;
+    margin: 0px;
+    margin-top: 50px;
+    padding: 0px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #222629;
+    color: #ffffff;
+}
+
+footer .row .col-6.foot {
+    display: flex;
+    width: 50%;
+}
+
+footer .row .col-6.foot .col-6 {
+    display: block;
+    padding-left: 10%;
+}
+
+footer address {
+    font-size: 14px;
+}
+
+footer ul.contactUs, ul.bottomLinks {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+footer ul.contactUs li {
+    padding: 10px 0px;
+}
+
+footer ul.contactUs li:hover span {
+    color: #86c232;
+}
+
+footer ul.contactUs li span {
+    padding-right: 15px;
+    font-size: 25px;
+    vertical-align: super;
+    transition: 0.3s ease;
+}
+
+footer ul.contactUs li span p {
+    display: none;
+}
+
+footer ul.contactUs li p {
+    display: inline-block;
+    margin: 0;
+}
+
+footer a.fab {
+    color: #ffffff;
+    font-size: 60px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    transition: 0.2s ease;
+}
+
+footer a.fab:hover {
+    color: #86c232;
+}
+
+footer ul.bottomLinks li {
+    padding: 1px 0px;
+}
+
+footer ul.bottomLinks li a {
+    color: #ffffff;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+footer ul.bottomLinks li a:hover {
+    color: #86c232;
+}
+
+footer ul.bottomLinks li a:active {
+    color: #61892f;
+}
+
+footer .row .col-6.foot .col-6 p.bottomSub {
+    margin-right: 15px;
+}
+
+footer form.bottomForm input[type="email"] {
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 7px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    transition: 0.2s ease;
+}
+
+footer form.bottomForm input[type="email"]:focus {
+    box-shadow: 0px 0px 5px 2px #86c232;
+}
+
+footer form.bottomForm input[type="submit"] {
+    display: block;
+    margin-top: 20px;
+    border: none;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: #000000;
+    background-color: #86c232;
+    cursor: pointer;
+    transition: 0.3s ease;
+    outline: none;
+}
+
+footer form.bottomForm input[type="submit"]:hover {
+    background-color: #61892f;
+}
+
+footer form.bottomForm input[type="submit"]:active {
+    background-color: #507227;
+    color: #ffffff;
+}
+
+/***** Top Button Styling *****/
+#topButton {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(134,194,50,0.7);
+    color: #222629;
+    cursor: pointer;
+    padding: 20px 26px;
+    border-radius: 50px;
+    font-size: 25px;
+    transition: 0.5s ease;
+}
+
+#topButton:hover {
+    background-color: #86c232;
+    box-shadow: 0px 1px 15px rgba(0,0,0,0.4);
+}
+
+/***** Rows & Cols *****/
+.row {display: flex;}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.col-20 {width: 20%;}
+
+/***** Responsive 1 *****/
+@media screen and (max-width: 1200px) {
+    .row.hoverFeatures {
+        width: 100%;
+    }
+    
+    .featureBox {
+        width: 300px;
+    }
+}
+
+/***** Responsive 2 *****/
+@media screen and (max-width: 1135px) {
+    footer ul.contactUs li span {
+        font-size: 18px;
+        padding-right: 5px;
+    }
+    
+    footer {
+        font-size: 13px;
+    }
+    
+    footer h2 {
+        font-size: 20px;
+    }
+    
+    .slideButton {
+        bottom: 28%;
+    }
+    
+    .col-9.video {
+        width: 80%;
+    }
+    
+    .featureBox {
+        width: 280px;
+    }
+}
+
+/***** Responsive 3 *****/
+@media screen and (max-width: 1050px) {
+    nav .navContent img.mainLogo {
+        display: none;
+    }
+    
+    nav .navContent img.smallLogo {
+        display: inline-block;
+    }
+    
+    .slideHeader {
+        font-size: 14px;
+    }
+    
+    .slideText {
+        font-size: 18px
+    }
+    
+    .slideButton {
+        bottom: 25%;
+    }
+    
+    .row.about {
+        display: block;
+    }
+    
+    .col-6.aboutLeft {
+        padding: 70px 100px 30px 100px;
+        width: 100%;
+    }
+    
+    .col-6.aboutRight {
+        padding: 20px 0px 0px;
+        width: 100%;
+    }
+    
+    .overlayText {
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    .row.team {
+        display: block;
+    }
+    
+    .row .col-6.team {
+        width: 100%;
+    }
+    
+    footer ul.contactUs li span {
+        display: block;
+        padding-bottom: 2px;
+    }
+    
+    footer ul.contactUs li span p {
+        display: inline-block;
+        padding-left: 7px;
+        font-family: "Poppins" ,sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        font-style: italic;
+    }
+    
+    .row .col-12 .titleImg .slideHeader {
+        bottom: 40%;
+    }
+    
+    .col-6.aboutRight.values {
+        padding-top: 0px;
+    }
+}
+
+/***** Responsive 4 *****/
+@media screen and (max-width: 936px) {
+    .slideText {
+        bottom: 37%;
+    }
+    
+    .slideButton {
+        bottom: 20%;
+    }
+    
+    .row.features .col-6.features {
+        display: block;
+        width: 100%;
+    }
+    
+    .col-6.features .col-6 h4 {
+        font-size: 18px;
+    }
+    
+    .col-6.features .col-6 p {
+        font-size: 16px;
+    }
+    
+    .row.features .col-6.features .col-6 {
+        width: 100%;
+    }
+    
+    footer .row .col-6.foot {
+        display: block;
+        width: 100%;
+    }
+    
+    footer .row .col-6.foot .col-6 {
+        width: 100%;
+    }
+    
+    footer {
+        font-size: 16px;
+    }
+    
+    footer h2 {
+        font-size: 24px;
+    }
+    
+    footer ul.contactUs li p {
+        font-size: 16px;
+    }
+    
+    footer ul.contactUs li span {
+        display: inline-block;
+        font-size: 25px;
+        padding-right: 10px;
+    }
+    
+    footer ul.contactUs li span p {
+        display: none;
+    }
+    
+    .featureBox {
+        width: 250px;
+    }
+}
+
+/***** Responsive 5 *****/
+@media screen and (max-width: 836px) {
+    nav ul.topnav li:not(:last-child) {
+        display: none;
+    }
+    
+    nav ul.topnav li.dropdownIcon {
+        display: inline-block;
+        position: absolute;
+        top: 40px;
+        right: 100px;
+    }
+    
+    nav .responsiveNav.responsive {
+        display: block;
+    }
+    
+    nav ul.hiddenTopnav li {
+        display: block;
+    }
+    
+    nav ul.hiddenTopnav li a {
+        display: block;
+        text-align: left;
+        padding: 12px;
+        padding-left: 20px;
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 16px;
+        text-transform: uppercase;
+        transition-duration: 0.2s;
+        background-color: #2e3438;
+    }
+    
+    nav ul.hiddenTopnav li a:hover {
+        background-color: #222629;
+        color: #86c232;
+    }
+    
+    nav ul.hiddenTopnav li a:active {
+        background-color: #171a1c;
+        color: #61892f;
+    }
+    
+    .slideHeader {
+        font-size: 14px;
+    }
+    
+    .slideButton {
+        bottom: 20%;
+    }
+    
+    .slideButton a {
+        padding: 7px 15px;
+    }
+    
+    .row .col-12 .titleImg .slideHeader {
+        bottom: 37%;
+    }
+    
+    .parallax .row .col-6.parallax .col-6 h1 {
+        font-size: 45px;
+        margin: 10px;
+    }
+    
+    .parallax .row .col-6.parallax .col-6 p {
+        font-size: 16px;
+    }
+    
+    .featureBox {
+        width: 200px;
+    }
+}
+
+/***** Responsive 6 *****/
+@media screen and (max-width: 768px) {
+    .slideText {
+        display: none;
+    }
+    
+    .slideHeader {
+        bottom: 50%;
+        font-size: 13px;
+        padding-left: 60px;
+    }
+    
+    .slideButton {
+        bottom: 30%;
+        padding-left: 60px;
+    }
+    
+    footer a.fab {
+        font-size: 45px;
+    }
+    
+    ul.breadcrumbs {
+        margin-left: 60px;
+    }
+    
+    .featureBox {
+        width: 180px;
+    }
+}
+
+/****** Responsive 7 ******/
+@media screen and (max-width: 610px) {
+    .slideHeader {
+        font-size: 10px;
+    }
+    
+    .row.features {
+        display: block;
+    }
+    
+    .col-6.aboutLeft, .col-6.aboutRight.values {
+        padding: 50px 25px 30px;
+    }
+    
+    .col-6.aboutRight img {
+        max-width: 80%;
+    }
+    
+    .row.foot {
+        display: block;
+    }
+    
+    .row.foot .col-6.foot .col-6 {
+        padding-left: 15%
+    }
+    
+    footer a.fab {
+        font-size: 60px;
+        margin-bottom: 0px;
+    }
+    
+    .row .col-12 .titleImg .slideHeader {
+        font-size: 28px;
+    }
+    
+    .parallax .row .col-6.parallax {
+        display: block;
+    }
+    
+    .parallax .row .col-6.parallax .col-6 {
+        margin: auto;
+        padding-top: 10px;
+    }
+    
+    .row.hoverFeatures {
+        display: block;
+        margin-bottom: 0px;
+    }
+    
+    .featureBox {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+/***** Responsive 8 *****/
+@media screen and (max-width: 480px) {
+    .slideHeader {
+        bottom: 40%;
+    }
+    
+    .slideButton {
+        bottom: 25%;
+    }
+    
+    .slideButton a {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .row .col-6.team {
+        display: block;
+    }
+    
+    .row .col-6.team .col-6 {
+        width: 100%;
+    }
+    
+    footer a.fab {
+        font-size: 45px;
+    }
+    
+    ul.breadcrumbs {
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 2px 20px;
+    }
+    
+    .parallax .row .col-6.parallax .col-6 {
+        width: 100%;
+        padding-top: 15px;
+    }
+    
+    .parallax .row .col-6.parallax .col-6 h1 {
+        font-size: 40px;
+        margin: 10px;
+    }
+    
+    table tbody tr:nth-child(2n) {
+        background-color: inherit;
+    }
+    
+    table tbody td:not(:nth-child(2n)) {
+        background-color: #585a5c;
+    }
+    
+    thead tr {
+		position: absolute;
+		top: -9999em;
+		left: -9999em;
+	}
+	
+    tr {
+        border: 2px solid #000000;
+        border-bottom: 0;
+    }
+    
+    tr + tr {
+        margin-top: 25px;
+    }
+    
+    tr, td {
+		display: block;
+	}
+    
+	td {
+		border: none;
+		border-bottom: 2px solid #000000;
+		padding-left: 20px;
+	}
+    
+    td::before {
+        display: inline-block;
+        margin-left: -100%;
+        width: 100%;
+    }
+}
+
+/***** Responsive 9 *****/
+@media screen and (max-width: 320px) {
+    nav .navContent {
+        padding: 10px 20px;
+    }
+    
+    nav ul.topnav li.dropdownIcon {
+        top: 21px;
+        right: 20px;
+    }
+    
+    .slideshowContainer {
+        display: none;
+    }
+    
+    .hiddenSlide {
+        display: block;
+    }
+    
+    .hiddenSlide img {
+        width: 100%;
+        margin-bottom: -7px;
+    }
+    
+    .slideHeader {
+        padding-left: 10px;
+        top: 25%;
+    }
+    
+    .slideButton {
+        padding-left: 10px;
+        top: 60%;
+    }
+    
+    .overlayText {
+        overflow: hidden;
+    }
+    
+    .row.foot .col-6.foot .col-6 {
+        padding-left: 10%
+    }
+    
+    #topButton {
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+    
+    .row .col-12 .titleImg .slideHeader {
+        font-size: 24px;
+        top: 32%;
+        padding-left: 20px;
+    }
+    
+    ul.breadcrumbs {
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 0px 20px;
+    }
+    
+    ul.breadcrumbs li {
+        font-size: 14px;
+    }
+    
+    .col-6.aboutRight.values blockquote {
+        margin: 10px;
+        font-size: 15px;
+    }
+    
+    .value .valueLeft img {
+        margin-left: 10px;
+    }
+    
+    .row.about.about .col-6.aboutRight.values {
+        padding-top: 0px;
+    }
+}

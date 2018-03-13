@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Lucrare de an la HTML, CSS si JavaScript">
+        <meta name="keywords" content="USM, FMI, HTML, CSS, Javascript">
+        <meta name="author" content="Levinschi Alexandru">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home - ArchitEco</title>
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+        <script type="text/javascript" src="js/responsiveNav.js"></script>
+        <script type="text/javascript" src="js/slideshowContainer.js"></script>
+        <script type="text/javascript" src="js/topButton.js"></script>
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header>
+            <nav class="mainNavbar">
+                <div class="navContent">
+                    <a href="index.html"><img class="mainLogo" src="img/mainLogo.png" alt="Logo"></a>
+                    <a href="index.html"><img class="smallLogo" src="img/smallLogo.png" alt="Logo"></a>
+                    <div class="linkList">
+                        <ul class="topnav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Dev</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="responsiveNav" id="dropdownClick">
+                    <ul class="hiddenTopnav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Developer</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Page Content -->
+        <!-- Slideshow -->
+        <div class="slideshowContainer">
+            <div class="slides fade">
+                <img src="img/slideImg1.jpg">
+                <div class="slideHeader main"><h1>It's worth building eco</h1></div>
+                <div class="slideText main">Regione interesset at eum, ex nec saepe perfecto assentior.<br>Ei dolore corpora nec, duo id delectus lucilius lobortis,<br>cibo recusabo inciderint cu eum.</div>
+                <div class="slideButton"><a href="about.html">Learn more</a></div>
+            </div>
+            <div class="slides fade">
+                <img src="img/slideImg2.jpg">
+                <div class="slideHeader"><h1>A grace between nature and society</h1></div>
+                <div class="slideText">Mundi nostrum sensibus mel ei, te sea agam nibh feugiat, cu pro<br>unum eripuit salutatus. An natum electram his, vim voluptua<br>neglegentur ex, nec saepe accusam offendit at.</div>
+                <div class="slideButton"><a href="about.html">Learn more</a></div>
+            </div>
+            <div class="slides fade">
+                <img src="img/slideImg3.jpg">
+                <div class="slideHeader"><h1>Building a brighter future</h1></div>
+                <div class="slideText">Possim postulant eos an, quod detraxit praesent in ius. Cu aeque<br>discere definitionem qui, et eleifend scriptorem sit,<br>autem fuisset at pri.</div>
+                <div class="slideButton"><a href="about.html">Learn more</a></div>
+            </div>
+            <a class="slidePrev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="slideNext" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="hiddenSlide">
+            <img src="img/hiddenSlideImg1.jpg">
+            <div class="slideHeader"><h1>It's worth building eco</h1></div>
+            <div class="slideButton"><a href="#">Learn more</a></div>
+        </div>
+
+        <!-- Features Container -->
+        <div class="row features">
+            <div class="col-6 features">
+                <div class="col-6">
+                    <span class="fab fa-cc-paypal"></span>
+                    <h4>Feature #1</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.<br>Some text here.</p>
+                </div>
+                <div class="col-6">
+                    <span class="far fa-calendar-check"></span>
+                    <h4>Feature #2</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.<br>Some text here.</p>
+                </div>
+            </div>
+            <div class="col-6 features">
+                <div class="col-6">
+                    <span class="fas fa-phone-square"></span>
+                    <h4>Feature #3</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Some text here.</p>
+                </div>
+                <div class="col-6">
+                    <span class="fas fa-tv"></span>
+                    <h4>Feature #4</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.<br>Some text here.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Container -->
+        <div class="row about">
+            <div class="col-6 aboutLeft">
+                <h1>About Us</h1>
+                <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat ulla. Pariatur.<br><br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</article>
+                <br>
+                <div class="aboutButton"><a href="about.html">Read more</a></div>
+            </div>
+            <div class="col-6 aboutRight">
+                <img src="img/aboutImg.png" alt="About Image">
+            </div>
+        </div>
+
+        <!-- Projects Container -->
+        <div class="row projects">
+            <div class="col-12 other">
+                <h1>Our Projects</h1>
+            </div>
+        </div>
+        <div class="row projects">
+            <div class="col-20">
+                <a href="#">
+                    <img src="img/project1.jpg" alt="Project 1">
+                    <div class="projectsOverlay"></div>
+                    <div class="overlayText">Project #1</div>
+                </a>
+            </div>
+            <div class="col-20">
+                <a href="#">
+                    <img src="img/project2.jpg" alt="Project 2">
+                    <div class="projectsOverlay"></div>
+                    <div class="overlayText">Project #2</div>
+                </a>
+            </div><div class="col-20">
+                <a href="#">
+                    <img src="img/project3.jpg" alt="Project 3">
+                    <div class="projectsOverlay"></div>
+                    <div class="overlayText">Project #3</div>
+                </a>
+            </div><div class="col-20">
+                <a href="#">
+                    <img src="img/project4.jpg" alt="Project 4">
+                    <div class="projectsOverlay"></div>
+                    <div class="overlayText">Project #4</div>
+                </a>
+            </div><div class="col-20">
+                <a href="#">
+                    <img src="img/project5.jpg" alt="Project 5">
+                    <div class="projectsOverlay"></div>
+                    <div class="overlayText">Project #5</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Team Container -->
+        <div class="row team">
+            <div class="col-12 other">
+                <h1>Our Team</h1>
+            </div>
+        </div>
+        <div class="row team">
+            <div class="col-6 team">
+                <div class="col-6">
+                    <div class="card">
+                        <img src="img/team1.jpg" alt="John" title="John">
+                        <h3>John Doe</h3>
+                        <p class="teamRank">CEO & Founder</p>
+                        <p>Harvard University</p>
+                        <div class="cardButton"><a href="#">Read more</a></div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <img src="img/team1.jpg" alt="John" title="John">
+                        <h3>John Doe</h3>
+                        <p class="teamRank">CEO & Founder</p>
+                        <p>Harvard University</p>
+                        <div class="cardButton"><a href="#">Read more</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 team">
+                <div class="col-6">
+                    <div class="card">
+                        <img src="img/team1.jpg" alt="John" title="John">
+                        <h3>John Doe</h3>
+                        <p class="teamRank">CEO & Founder</p>
+                        <p>Harvard University</p>
+                        <div class="cardButton"><a href="#">Read more</a></div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <img src="img/team1.jpg" alt="John" title="John">
+                        <h3>John Doe</h3>
+                        <p class="teamRank">CEO & Founder</p>
+                        <p>Harvard University</p>
+                        <div class="cardButton"><a href="#">Read more</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row foot">
+                <div class="col-6 foot">
+                    <div class="col-6">
+                    <h2>Contact Us</h2>
+                        <address>
+                            <ul class="contactUs">
+                                <li><span class="fas fa-map-marker-alt"><p>Address:</p></span><p>77 Tarkiln Hill Ave.<br>Des Plaines, IL 60016</p></li>
+                                <li><span class="far fa-envelope"><p>E-Mail:</p></span><p>architeco@gmail.com<br>dev.alisterion@gmail.com</p></li>
+                                <li><span class="fas fa-phone"><p>Telephone:</p></span><p>+373 68 068 500<br>+373 269 2 02 81</p></li>
+                            </ul>
+                        </address>
+                    </div>
+                    <div class="col-6">
+                        <h2>Social</h2>
+                        <a href="#" class="fab fa-google-plus-square"></a>
+                        <a href="#" class="fab fa-facebook"></a>
+                        <a href="#" class="fab fa-twitter-square"></a>
+                        <a href="#" class="fab fa-tumblr-square"></a>
+                    </div>
+                </div>
+                <div class="col-6 foot">
+                    <div class="col-6">
+                        <h2>Quick Links</h2>
+                        <ul class="bottomLinks">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Developer</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <h2>Subscribe</h2>
+                        <p class="bottomSub">Newsletter Signup.<br>Enter your email to get the latest news:</p>
+                        <form class="bottomForm">
+                            <input type="email" placeholder="E-Mail">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Top Button -->
+        <button id="topButton" title="Go to top" onclick="topFunction()"><span class="fas fa-angle-up"></span></button>
+        
+        <script type="text/javascript" src="js/scrollreveal.min.js"></script>
+        <script type="text/javascript" src="js/reveal.js"></script>
+
+    </body>
+</html>
