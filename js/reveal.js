@@ -31,6 +31,10 @@ sr.reveal('.col-12.other', { duration: 2000 });
 
 sr.reveal('.row.hoverFeatures', { duration: 2000 });
 
+// Projects Page
+
+sr.reveal('.row.ourProjects', { duration: 2000 });
+
 // -----
 
 sr.reveal('.slideHeader.main', { 

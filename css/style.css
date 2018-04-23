@@ -550,7 +550,7 @@ th, td {
     position: relative;
     width: 350px;
     height: 200px;
-    background-color: grey;
+    background-color: #7d8082;
     border-radius: 3px;
     border: 1px solid #000000;
     text-align: center;
@@ -603,6 +603,79 @@ th, td {
     font-size: 15px;
     margin: 10px;
     color: #ffffff;
+}
+
+/***** Testimonials Styling *****/
+.row.shadow {
+    box-shadow: inset 0px 4px 5px rgba(0,0,0,0.3);
+}
+
+.aboutRight.testim, .aboutLeft.testim {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+h1.testimonials {
+    margin-bottom: 0px;
+}
+
+h4.testimonials {
+    margin: 0px;
+}
+
+.col-6.aboutLeft.testim, .col-6.aboutRight.testim {
+    padding-top: 30px;
+}
+
+.testimBlock {
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+    background-color: #7d8082;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+/***** ***** Projects Page ***** *****/
+/***** Projects Styling *****/
+.row.ourProjects {
+    padding: 0px 100px;
+}
+
+.project {
+    position: relative;
+    background-color: #7d8082;
+    margin: 0px 20px 40px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+.project img {
+    width: 100%;
+}
+
+.project a {
+    color: #000000;
+    transition: 0.2s ease-in-out;
+}
+
+.project a:hover {
+    color: #86c232;   
+}
+
+.project a:active {
+    color: #61892f;
+}
+
+.pTitle {
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.pDescription {
+    padding-left: 10px;
 }
 
 /***** Footer Styling *****/
@@ -785,6 +858,10 @@ footer form.bottomForm input[type="submit"]:active {
     .featureBox {
         width: 300px;
     }
+    
+    .testimBlock {
+        width: 80%;
+    }
 }
 
 /***** Responsive 2 *****/
@@ -884,6 +961,25 @@ footer form.bottomForm input[type="submit"]:active {
     
     .col-6.aboutRight.values {
         padding-top: 0px;
+    }
+    
+    .col-6.aboutLeft.testim {
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .testimBlock {
+        width: 80%;
+    }
+    
+    /**/
+    .row.ourProjects {
+        display: block;
+    }
+    
+    .col-4.projects {
+        display: block;
     }
 }
 
@@ -1021,6 +1117,10 @@ footer form.bottomForm input[type="submit"]:active {
     
     .featureBox {
         width: 200px;
+    }
+    
+    .col-6.aboutLeft.testim {
+        padding: 0;
     }
 }
 
@@ -1190,6 +1290,10 @@ footer form.bottomForm input[type="submit"]:active {
         margin-left: -100%;
         width: 100%;
     }
+    
+    .testimBlock {
+        width: 90%;
+    }
 }
 
 /***** Responsive 9 *****/
@@ -1267,5 +1371,9 @@ footer form.bottomForm input[type="submit"]:active {
     
     .row.about.about .col-6.aboutRight.values {
         padding-top: 0px;
+    }
+    
+    .testimBlock {
+        padding: 10px;
     }
 }
