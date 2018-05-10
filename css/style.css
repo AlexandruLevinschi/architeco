@@ -641,41 +641,89 @@ h4.testimonials {
 /***** ***** Projects Page ***** *****/
 /***** Projects Styling *****/
 .row.ourProjects {
-    padding: 0px 100px;
+    display: flex;
+    margin: auto;
+    padding: 0px 55px;
+}
+
+.col-6.ourProjects {
+    display: flex;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.col-6.gallery {
+    display: block;
+    margin: auto;
 }
 
 .project {
-    position: relative;
-    background-color: #7d8082;
-    margin: 0px 20px 40px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
-}
-
-.project img {
-    width: 100%;
-}
-
-.project a {
-    color: #000000;
+    display: block;
+    margin: auto;
+    width: 80%;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.2);
     transition: 0.2s ease-in-out;
 }
 
-.project a:hover {
-    color: #86c232;   
+.project:hover {
+    transform: scale(1.05);
 }
 
-.project a:active {
-    color: #61892f;
+.project img {
+    display: block;
+    margin: auto;
+    width: 100%;
 }
 
-.pTitle {
+.project article {
+    background-color: #7d8082;
+    padding: 5px;
+}
+
+.project article a {
+    color: #000000;
     font-weight: bold;
-    font-size: 18px;
-    padding-left: 10px;
+    transition: 0.2s ease-in-out;
 }
 
-.pDescription {
-    padding-left: 10px;
+.project article a:hover {
+    color: #86c232;
+}
+
+.project article p {
+    margin: 0px;
+    font-size: 15px;
+}
+
+/***** Individual Project Styling *****/
+h1.projectTitle {
+    font-size: 42px;
+}
+
+p.smallText {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #222629;
+    margin: 10px 0px 0px;
+    font-weight: bold;
+}
+
+p.mediumText {
+    margin: 0px;
+    font-weight: bold;
+}
+
+article.description {
+    margin-top: 30px;
+}
+
+.col-6.aboutRight.projectBig {
+    padding-top: 100px;
+}
+
+img.projectBig {
+    width: 75%;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.2);
 }
 
 /***** Footer Styling *****/
@@ -862,6 +910,14 @@ footer form.bottomForm input[type="submit"]:active {
     .testimBlock {
         width: 80%;
     }
+    
+    .row.ourProjects {
+        display: block;
+    }
+    
+    .col-6.ourProjects {
+        width: 100%;
+    }
 }
 
 /***** Responsive 2 *****/
@@ -973,13 +1029,8 @@ footer form.bottomForm input[type="submit"]:active {
         width: 80%;
     }
     
-    /**/
-    .row.ourProjects {
-        display: block;
-    }
-    
-    .col-4.projects {
-        display: block;
+    .col-6.aboutRight.projectBig {
+        padding-top: 0px;
     }
 }
 
@@ -1207,6 +1258,19 @@ footer form.bottomForm input[type="submit"]:active {
         width: 90%;
         margin-bottom: 20px;
     }
+    
+    .row.ourProjects {
+        padding: 0px;
+    }
+    
+    .col-6.ourProjects {
+        display: block;
+    }
+    
+    .col-6.gallery {
+        width: 100%;
+        margin-bottom: 50px;
+    }
 }
 
 /***** Responsive 8 *****/
@@ -1375,5 +1439,9 @@ footer form.bottomForm input[type="submit"]:active {
     
     .testimBlock {
         padding: 10px;
+    }
+    
+    .project {
+        width: 90%;
     }
 }
