@@ -40,6 +40,10 @@ sr.reveal('.row.ourProjects', { duration: 2000 });
 sr.reveal('.row.ourTeam', { duration: 2000 });
 sr.reveal('.member', { duration: 2000 });
 
+// Contacts Page
+
+sr.reveal('.contactForm', { duration: 2000 });
+
 // -----
 
 sr.reveal('.slideHeader.main', { 

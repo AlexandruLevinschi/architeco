@@ -221,7 +221,7 @@ nav ul.topnav li a:active {
     margin: 0px;
 }
 
-.aboutButton a {
+.aboutButton a, .contactForm input[type="submit"] {
     display: table-cell;
     padding: 10px 25px;
     font-weight: bold;
@@ -232,11 +232,11 @@ nav ul.topnav li a:active {
     transition: 0.3s ease;
 }
 
-.aboutButton a:hover {
+.aboutButton a:hover, .contactForm input[type="submit"]:hover {
     background-color: #86c232;
 }
 
-.aboutButton a:active {
+.aboutButton a:active, .contactForm input[type="submit"]:active {
     background-color: #61892f;
     color: #ffffff;
 }
@@ -252,10 +252,6 @@ nav ul.topnav li a:active {
 }
 
 /***** Projects Container Styling *****/
-.row.projects {
-    box-shadow: 0px 4px 5px rgba(0,0,0,0.3);
-}
-
 .row .col-12.other {
     text-align-last: center;
     padding: 20px 0px;
@@ -428,6 +424,7 @@ ul.breadcrumbs li a:active {
     padding-top: 30px;
     height: 0px;
     overflow: hidden;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.2);
 }
 
 .videoContainer iframe {
@@ -766,6 +763,98 @@ img.projectBig {
     color: #86c232;
 }
 
+/***** ***** Contacts Page ***** *****/
+/***** Contacts Container Styling *****/
+.col-6.aboutLeft.contacts {
+    padding-right: 0px;
+}
+
+ul.contacts {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.contacts li {
+    padding: 10px 0px;
+}
+
+ul.contacts li:hover span {
+    color: #86c232;
+}
+
+ul.contacts li span {
+    padding-right: 15px;
+    font-size: 25px;
+    vertical-align: super;
+    transition: 0.3s ease;
+}
+
+ul.contacts li p {
+    display: inline-block;
+    margin: 0;
+}
+
+/***** Contact Form Styling *****/
+.contactForm .row {
+    text-align: center;
+    display: block;
+}
+
+.contactForm .col-4 {
+    display: inline-block;
+    width: 30%;
+    margin: auto;
+}
+
+.col-4 input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #222629;
+    outline: none;
+}
+
+.col-4 input:nth-child(2) {
+    margin-bottom: 0px;
+}
+
+.col-4 textarea {
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 100px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    position: relative;
+    top: 15px;
+}
+
+.contactForm input[type="submit"] {
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contactForm input::placeholder, .contactForm textarea::placeholder {
+    color: #323639;
+}
+
 /***** Footer Styling *****/
 footer {
     width: 100%;
@@ -947,6 +1036,18 @@ footer form.bottomForm input[type="submit"]:active {
     .bio p {
         font-size: 14px;
     }
+    
+    .col-4 input, .col-4 textarea {
+        width: 350px;
+    }
+    
+    ul.contacts li span {
+        padding-right: 7px;
+    }
+    
+    ul.contacts {
+        font-size: 14px;
+    }
 }
 
 /***** Responsive 2 *****/
@@ -984,6 +1085,10 @@ footer form.bottomForm input[type="submit"]:active {
     .bio p {
         font-size: 16px;
     }
+    
+    .col-4 input, .col-4 textarea {
+        width: 325px;
+    }
 }
 
 /***** Responsive 3 *****/
@@ -1011,6 +1116,31 @@ footer form.bottomForm input[type="submit"]:active {
     
     .featureBox {
         width: 280px;
+    }
+    
+    .contactForm .col-4 {
+        width: 49%;
+    }
+    
+    .contactForm .col-4:nth-child(3) {
+        display: block;
+        width: 100%;
+    }
+    
+    .col-4 input {
+        width: 85%;
+    }
+    
+    .col-4 textarea {
+        width: 91.5%;
+    }
+    
+    .contactForm input[type="submit"] {
+    margin-top: 40px;
+    }
+    
+    ul.contacts li span {
+        font-size: 20px;
     }
 }
 
@@ -1096,6 +1226,22 @@ footer form.bottomForm input[type="submit"]:active {
     }
     
     .col-6.aboutRight.projectBig {
+        padding-top: 0px;
+    }
+    
+    ul.contacts p {
+        font-size: 16px;
+    }
+    
+    ul.contacts li span {
+        font-size: 24px;
+    }
+    
+    .col-6.aboutLeft.contacts {
+    padding-bottom: 0px;
+    }
+    
+    .col-6.aboutRight.contacts {
         padding-top: 0px;
     }
 }
@@ -1243,6 +1389,16 @@ footer form.bottomForm input[type="submit"]:active {
     .col-6.aboutLeft.testim {
         padding: 0;
     }
+    
+    .contactForm .col-4 {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .col-4 input {
+        width: 91.5%;
+    }
 }
 
 /***** Responsive 7 *****/
@@ -1358,10 +1514,28 @@ footer form.bottomForm input[type="submit"]:active {
         width: 100%;
         margin-bottom: 20px;
     }
+    
+    ul.contacts p {
+        font-size: 15px;
+    }
+    
+    ul.contacts li span {
+        font-size: 19px;
+        padding-right: 5px;
+    }
 }
 
 /***** Responsive 9 *****/
 @media screen and (max-width: 480px) {
+    nav .navContent {
+        padding: 10px 20px 3px;
+    }
+    
+    nav ul.topnav li.dropdownIcon {
+        top: 18px;
+        right: 20px;
+    }
+    
     .slideHeader {
         bottom: 40%;
     }
@@ -1454,19 +1628,30 @@ footer form.bottomForm input[type="submit"]:active {
         padding: 0px 20px;
         text-align: center;
     }
+    
+    address .row.contacts {
+        display: block;
+    }
+    
+    .row.contacts .col-6 {
+        width: 100%;
+    }
+    
+    ul.contacts p {
+        font-size: 16px;
+    }
+    
+    ul.contacts li span {
+        font-size: 24px;
+    }
+    
+    .contactForm input {
+        font-size: 18px;
+    }
 }
 
 /***** Responsive 10 *****/
-@media screen and (max-width: 320px) {
-    nav .navContent {
-        padding: 10px 20px;
-    }
-    
-    nav ul.topnav li.dropdownIcon {
-        top: 21px;
-        right: 20px;
-    }
-    
+@media screen and (max-width: 320px) {    
     .slideshowContainer {
         display: none;
     }
@@ -1505,7 +1690,7 @@ footer form.bottomForm input[type="submit"]:active {
     
     .row .col-12 .titleImg .slideHeader {
         font-size: 24px;
-        top: 32%;
+        top: 26%;
         padding-left: 20px;
     }
     
