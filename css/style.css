@@ -597,7 +597,7 @@ th, td {
 }
 
 .hiddenBox p {
-    font-size: 15px;
+    font-size: 14px;
     margin: 10px;
     color: #ffffff;
 }
@@ -1089,6 +1089,14 @@ footer form.bottomForm input[type="submit"]:active {
     .col-4 input, .col-4 textarea {
         width: 325px;
     }
+    
+    .col-20:nth-child(5) {
+        display: none;
+    }
+    
+    .col-20 {
+        width: 25%;
+    }
 }
 
 /***** Responsive 3 *****/
@@ -1141,6 +1149,10 @@ footer form.bottomForm input[type="submit"]:active {
     
     ul.contacts li span {
         font-size: 20px;
+    }
+    
+    .hiddenBox p {
+        font-size: 13px;
     }
 }
 
@@ -1311,6 +1323,18 @@ footer form.bottomForm input[type="submit"]:active {
     .photo img {
         width: 200px;
     }
+    
+    .col-20:nth-child(4) {
+        display: none;
+    }
+    
+    .col-20 {
+        width: 33.33%;
+    }
+    
+    .hiddenBox p {
+        font-size: 12px;
+    }
 }
 
 /***** Responsive 6 *****/
@@ -1398,6 +1422,14 @@ footer form.bottomForm input[type="submit"]:active {
     
     .col-4 input {
         width: 91.5%;
+    }
+    
+    .hiddenBox h4 {
+        margin-top: 0px;
+    }
+    
+    .hiddenBox p {
+        margin: 0px 5px;
     }
 }
 
@@ -1522,6 +1554,33 @@ footer form.bottomForm input[type="submit"]:active {
     ul.contacts li span {
         font-size: 19px;
         padding-right: 5px;
+    }
+    
+    .row.projects {
+        display: block;
+    }
+    
+    .col-20 {
+        width: 49.5%;
+        display: inline-block;
+    }
+    
+    .col-20:nth-child(4)
+    {
+        display: inline-block;
+    }
+    
+    .row.projects {
+        margin-bottom: -7px;
+    }
+    
+    .hiddenBox h4 {
+        margin-top: 10px;
+    }
+    
+    .hiddenBox p {
+        font-size: 15px;
+        margin: 10px;
     }
 }
 
@@ -1648,6 +1707,15 @@ footer form.bottomForm input[type="submit"]:active {
     .contactForm input {
         font-size: 18px;
     }
+    
+    .col-20 {
+        width: 49%;
+    }
+    
+    .hiddenBox p {
+        font-size: 14px;
+        margin: 5px;
+    }
 }
 
 /***** Responsive 10 *****/
@@ -1728,5 +1796,14 @@ footer form.bottomForm input[type="submit"]:active {
     
     .col-6.ourTeam.left, .col-6.ourTeam.right {
         padding: 0px 20px 30px;
+    }
+    
+    .hiddenBox h4 {
+        margin-top: 5px;
+    }
+    
+    .hiddenBox p {
+        font-size: 13.5px;
+        margin: 0px 5px;
     }
 }
