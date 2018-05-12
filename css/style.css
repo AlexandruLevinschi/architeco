@@ -726,6 +726,46 @@ img.projectBig {
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.2);
 }
 
+/***** ***** Team Page ***** *****/
+/***** Team Container Styling *****/
+.row.ourTeam {
+    margin-bottom: 50px;
+}
+
+.col-6.ourTeam.left {
+    padding-left: 100px;
+}
+
+.col-6.ourTeam.right {
+    padding-right: 100px;
+}
+
+.member {
+    display: flex;
+}
+
+.member img {
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.2);
+}
+
+.member .bio {
+    padding: 0px 25px;
+}
+
+.bio h2,h5 {
+    margin: 0px;
+}
+
+.bio a {
+    color: #000000;
+    padding: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.bio a:hover {
+    color: #86c232;
+}
+
 /***** Footer Styling *****/
 footer {
     width: 100%;
@@ -897,7 +937,19 @@ footer form.bottomForm input[type="submit"]:active {
 .col-12 {width: 100%;}
 .col-20 {width: 20%;}
 
+
 /***** Responsive 1 *****/
+@media screen and (max-width: 1500px) {    
+    .photo img {
+        width: 250px;
+    }
+    
+    .bio p {
+        font-size: 14px;
+    }
+}
+
+/***** Responsive 2 *****/
 @media screen and (max-width: 1200px) {
     .row.hoverFeatures {
         width: 100%;
@@ -918,9 +970,23 @@ footer form.bottomForm input[type="submit"]:active {
     .col-6.ourProjects {
         width: 100%;
     }
+    
+    .row.ourTeam {
+        display: block;
+        margin-bottom: 0px;
+    }
+    
+    .col-6.ourTeam.left, .col-6.ourTeam.right {
+        width: 100%;
+        padding: 0px 100px 30px 100px;
+    }
+    
+    .bio p {
+        font-size: 16px;
+    }
 }
 
-/***** Responsive 2 *****/
+/***** Responsive 3 *****/
 @media screen and (max-width: 1135px) {
     footer ul.contactUs li span {
         font-size: 18px;
@@ -948,7 +1014,7 @@ footer form.bottomForm input[type="submit"]:active {
     }
 }
 
-/***** Responsive 3 *****/
+/***** Responsive 4 *****/
 @media screen and (max-width: 1050px) {
     nav .navContent img.mainLogo {
         display: none;
@@ -1034,7 +1100,7 @@ footer form.bottomForm input[type="submit"]:active {
     }
 }
 
-/***** Responsive 4 *****/
+/***** Responsive 5 *****/
 @media screen and (max-width: 936px) {
     .slideText {
         bottom: 37%;
@@ -1095,9 +1161,13 @@ footer form.bottomForm input[type="submit"]:active {
     .featureBox {
         width: 250px;
     }
+    
+    .photo img {
+        width: 200px;
+    }
 }
 
-/***** Responsive 5 *****/
+/***** Responsive 6 *****/
 @media screen and (max-width: 836px) {
     nav ul.topnav li:not(:last-child) {
         display: none;
@@ -1175,7 +1245,7 @@ footer form.bottomForm input[type="submit"]:active {
     }
 }
 
-/***** Responsive 6 *****/
+/***** Responsive 7 *****/
 @media screen and (max-width: 768px) {
     .slideText {
         display: none;
@@ -1203,9 +1273,17 @@ footer form.bottomForm input[type="submit"]:active {
     .featureBox {
         width: 180px;
     }
+    
+    .col-6.ourTeam.left, .col-6.ourTeam.right {
+        padding: 0px 60px 30px;
+    }
+    
+    .bio p {
+        font-size: 15px;
+    }
 }
 
-/****** Responsive 7 ******/
+/****** Responsive 8 ******/
 @media screen and (max-width: 610px) {
     .slideHeader {
         font-size: 10px;
@@ -1271,9 +1349,18 @@ footer form.bottomForm input[type="submit"]:active {
         width: 100%;
         margin-bottom: 50px;
     }
+    
+    .member {
+        display: block;
+    }
+    
+    .photo img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
-/***** Responsive 8 *****/
+/***** Responsive 9 *****/
 @media screen and (max-width: 480px) {
     .slideHeader {
         bottom: 40%;
@@ -1358,9 +1445,18 @@ footer form.bottomForm input[type="submit"]:active {
     .testimBlock {
         width: 90%;
     }
+    
+    .member .bio {
+        padding: 0px;
+    }
+    
+    h4.testimonials {
+        padding: 0px 20px;
+        text-align: center;
+    }
 }
 
-/***** Responsive 9 *****/
+/***** Responsive 10 *****/
 @media screen and (max-width: 320px) {
     nav .navContent {
         padding: 10px 20px;
@@ -1443,5 +1539,9 @@ footer form.bottomForm input[type="submit"]:active {
     
     .project {
         width: 90%;
+    }
+    
+    .col-6.ourTeam.left, .col-6.ourTeam.right {
+        padding: 0px 20px 30px;
     }
 }

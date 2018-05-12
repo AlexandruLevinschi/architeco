@@ -35,6 +35,11 @@ sr.reveal('.row.hoverFeatures', { duration: 2000 });
 
 sr.reveal('.row.ourProjects', { duration: 2000 });
 
+// Team Page
+
+sr.reveal('.row.ourTeam', { duration: 2000 });
+sr.reveal('.member', { duration: 2000 });
+
 // -----
 
 sr.reveal('.slideHeader.main', { 
