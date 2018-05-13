@@ -13,6 +13,7 @@
         <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
         <script type="text/javascript" src="js/responsiveNav.js"></script>
         <script type="text/javascript" src="js/topButton.js"></script>
+        <script type="text/javascript" src="js/check.js"></script>
     </head>
     <body>
 
@@ -191,8 +192,8 @@
                         <h2>Subscribe</h2>
                         <p class="bottomSub">Newsletter Signup.<br>Enter your email to get the latest news:</p>
                         <form class="bottomForm">
-                            <input type="email" placeholder="E-Mail">
-                            <input type="submit" value="Subscribe">
+                            <input id="subEmail" type="email" placeholder="E-Mail">
+                            <input type="submit" value="Subscribe" onclick="CheckSubscription();">
                         </form>
                     </div>
                 </div>

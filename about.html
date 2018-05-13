@@ -13,6 +13,7 @@
         <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
         <script type="text/javascript" src="js/responsiveNav.js"></script>
         <script type="text/javascript" src="js/topButton.js"></script>
+        <script type="text/javascript" src="js/check.js"></script>
     </head>
     <body>
 
@@ -85,25 +86,25 @@
         </div>
 
         <!-- Parallax Container -->
-        <div class="parallax">
+        <div id="parallax" class="parallax">
             <div class="row parallax">
                 <div class="col-6 parallax">
                     <div class="col-6">
-                        <h1>420</h1>
+                        <h1 id="reviews">420</h1>
                         <p>Positive reviews</p>
                     </div>
                     <div class="col-6">
-                        <h1>228</h1>
+                        <h1 id="projs">228</h1>
                         <p>Projects</p>
                     </div>
                 </div>
                 <div class="col-6 parallax">
                     <div class="col-6">
-                        <h1>50</h1>
+                        <h1 id="employees">50</h1>
                         <p>Employees</p>
                     </div>
                     <div class="col-6">
-                        <h1>148</h1>
+                        <h1 id="partners">148</h1>
                         <p>Partners</p>
                     </div>
                 </div>
@@ -145,7 +146,7 @@
             <div class="col-6 aboutRight values">
                 <h1>Our Mission</h1>
                 <p>ArchitEco Construction Company is committed to building long-term relationships based on integrity, performance, value, and client satisfaction.</p>
-                <blockquote>ArchitEco was built on tradition, integrity, and trust. Those same values were handed down over our long history and remain the framework for how we do business. When you work at ArchitEco, you work alongside men and women who share these beliefs — that is something you can count on.<br><br>We remain true to the same principles on which our company was founded over a hundred years ago: providing superior service to our clients, putting safety first, creating opportunities for our people.</blockquote>
+                <blockquote>ArchitEco was built on tradition, integrity, and trust. Those same values were handed down over our long history and remain the framework for how we do business. When you work at ArchitEco, you work alongside men and women who share these beliefs — that is something you can count on.<br><br>We remain true to the same principles on which our company was founded over twenty years ago: providing superior service to our clients, putting safety first, creating opportunities for our people.</blockquote>
                 <div class="value">
                     <div class="valueLeft">
                         <img src="img/signature.png">
@@ -196,8 +197,8 @@
                         <h2>Subscribe</h2>
                         <p class="bottomSub">Newsletter Signup.<br>Enter your email to get the latest news:</p>
                         <form class="bottomForm">
-                            <input type="email" placeholder="E-Mail">
-                            <input type="submit" value="Subscribe">
+                            <input id="subEmail" type="email" placeholder="E-Mail">
+                            <input type="submit" value="Subscribe" onclick="CheckSubscription();">
                         </form>
                     </div>
                 </div>
@@ -209,6 +210,7 @@
         
         <script type="text/javascript" src="js/scrollreveal.min.js"></script>
         <script type="text/javascript" src="js/reveal.js"></script>
+        <script type="text/javascript" src="js/counter.js"></script>
 
     </body>
 </html>

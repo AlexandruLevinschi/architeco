@@ -1431,6 +1431,10 @@ footer form.bottomForm input[type="submit"]:active {
     .hiddenBox p {
         margin: 0px 5px;
     }
+    
+    .col-6.aboutLeft.contacts h3 {
+        padding-right: 30px;
+    }
 }
 
 /***** Responsive 7 *****/
@@ -1468,6 +1472,11 @@ footer form.bottomForm input[type="submit"]:active {
     
     .bio p {
         font-size: 15px;
+    }
+    
+    .col-6.aboutLeft, .col-6.aboutRight.values {
+        padding-left: 60px;
+        padding-right: 60px;
     }
 }
 
